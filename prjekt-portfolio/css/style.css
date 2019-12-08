@@ -7,6 +7,7 @@ body{
     color:#777;
     margin: 0 auto;
     padding: 0 auto;
+    font-size: 10px;
 }
 hr{
     background-color:#007bff;
@@ -19,11 +20,12 @@ hr{
     text-transform: uppercase;
     background-color: transparent;
     border: 1px solid #007bff;
-    padding: 14px 20px;
+    padding: 1.5em 2em;
     display: inline-block;
     columns: #333;
     cursor: pointer;
     transition: all 1s;
+    font-size: 1.4em;
 
 
 }    
@@ -39,5 +41,62 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    display: flex;
 
 }
+section{
+    padding: 12em 0em;
+}
+h2{
+    text-transform:uppercase;
+    color: #333;\
+    margin-bottom: 2em;
+    font-size: 2em;
+    font-weight:400;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+header h1{
+ font-size:4.5em;
+ color:#007bff;
+ text-transform: uppercase;
+
+}
+header p{
+    font-size: 1.75em;
+    margin: 2em 0em;
+    color:#333;
+}
+header span {
+    color: #007bff;
+}
+
+nav {
+ position: sticky;
+ top: 0;
+ background-color: #007bff;
+ z-index: 200;
+}
+.nav-menu {
+   padding: 1em 0em;
+   text-align: center;
+   margin: 0em;
+}
+
+.nav-menu .menu-item {
+    display: inline-block;
+    margin: 0em 1em;
+}
+.nav-menu .menu-item a{
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5em 2em;
+    font-size: 1.5em;
+}
+
