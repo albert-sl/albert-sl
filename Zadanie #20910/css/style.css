@@ -1,0 +1,99 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2px auto;
+    padding: 2px auto;
+    color:white;
+}
+.text1{
+    color: black;
+}
+.photo1{
+    display:block;
+    position:relative;
+    background-image: url(images/man-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex
+}
+.photo2{
+    display: block;
+    height: 100vh;
+    background-image: url(images/man-2.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.photo3{
+
+    height: 120vh;
+    background-image: url(images/man-1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+@media screen and (max-width:992px){
+    .photo1{
+        height: 70vh;
+        color:black;
+        padding:0em;
+        text-align: center;
+    }
+    .photo2{
+        display: none;
+    }
+    .photo3{
+        display:none;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1170px){
+    .photo1{
+        display: none;
+    }
+    .photo3{
+        display: none;
+    }
+    .text1{
+        display: none;
+    }
+    .photo2{
+
+  
+      height: 100vh;
+      flex-direction: row;
+      justify-content: flex-end;
+      display: flex;
+      flex-wrap: wrap;
+      
+      
+     }
+}
+@media screen and (min-width:1170px){
+    .text1{
+        display: none;
+        }
+        .photo1{
+            display: none;
+        }
+        .photo2{
+            display: none;
+        }
+        .photo3{
+            display: flex;
+          justify-content: flex-start;
+
+        }
+}
+
+    

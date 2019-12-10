@@ -48,16 +48,21 @@ section{
     padding: 12em 0em;
 }
 h2{
-    text-transform:uppercase;
-    color: #333;\
+    text-transform: uppercase;
+    color: #333;
     margin-bottom: 2em;
     font-size: 2em;
     font-weight:400;
+}
+p{
+    font-size: 1.5em;
+    line-height: 1.5;
 }
 
 .container{
     max-width: 1170px;
     margin: auto;
+    text-align: center;
 }
 
 header h1{
@@ -100,3 +105,134 @@ nav {
     font-size: 1.5em;
 }
 
+section h2{
+  text-align: center;
+  padding: 0;
+}
+.about .cirkle{
+  max-width: 40em;
+  max-height: 40em;
+  border-radius: 50%;
+  margin: 2em 0em;
+  text-align: center;
+  }
+ .about p{
+  max-width: 70%;
+  margin: 4em auto 3em auto;
+  }
+
+.button{ text-align: center;
+}
+
+.portfolio{
+ background-color:#f2f1ed;
+}
+.portfolio .gallery-box {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+.gallery-box .galery-item {
+    flex-basis: 25%;
+    height: 20em;
+    margin: 0;
+    position: relative;
+
+}
+
+.gallery-box .galery-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.gallery-box .galery-item h3{
+   position: absolute;
+   height: 100%;
+   background-color: rgba(0, 130, 210, 0.7);
+   top: 0;
+   font-size: 3.5em;
+   color: #fff;
+   font-weight:300;
+   width: 100%;
+   margin: 0;
+   padding: 25% 0%;
+   opacity:0;
+   transition: all 2s;
+}
+.gallery-box .galery-item h3:hover { 
+    opacity: 1;
+}
+form {
+    text-align: center;
+    
+}
+.contact form {
+max-width: 70em;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between ;
+}
+.contact form input:not([type="submit"]){
+flex-basis: 48%;
+padding:1.5em;
+margin: 1.5em 0;
+}
+.contact form textarea{
+    flex-basis: 100%;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    height: 10em;
+}
+.contact form [type="submit"]{
+    margin: 0 auto;
+}
+
+.container .social-media{
+    margin-top:7em ;
+}
+.social-media i {
+    display: inline-block;
+    margin: 1.5em;
+    font-size: 2.5em;
+}
+.social-media a {
+    color: #007bff;
+}
+footer{
+    background-color:#f2f1ed; 
+    max-width: 100%;
+    max-height: 13em;
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    
+}
+@media screen and (max-width:480px){
+    [for="mobile-nav"] {
+        display: block;
+        color:#fff;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 1em;
+        font-size: 1.3em;
+    }
+    nav .nav-menu{
+        display: none;
+    }
+
+    nav #mobile-nav:checked+ul {
+        display: block;
+    }
+    nav .nav-menu .menu-item{
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+        
+    }
+    nav .nav-menu .menu-item a{
+        padding: 1.2em 2em;
+    }
+}
